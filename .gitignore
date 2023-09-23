@@ -1,0 +1,8 @@
+.vscode
+node_modules
+.json
+/.json
+/test/
+Test/
+.env
+Discord-bot
