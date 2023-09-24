@@ -5,7 +5,10 @@ import Collapse from "react-bootstrap/Collapse";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Card from "react-bootstrap/Card";
-import dev from "./assets/dev.svg"
+import dev from "./assets/dev.svg";
+import html from "./assets/html.svg";
+import git from "./assets/git.svg";
+import react from "./assets/react.svg";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -101,41 +104,48 @@ function App() {
         </section>
       </div>
       <div className='cards'>
-        <section>
-          <div className='container'>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant='top' src='holder.js/100px180' />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Button variant='primary'>Go somewhere</Button>
-              </Card.Body>
-            </Card>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant='top' src='holder.js/100px180' />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Button variant='primary'>Go somewhere</Button>
-              </Card.Body>
-            </Card>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant='top' src='holder.js/100px180' />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Button variant='primary'>Go somewhere</Button>
-              </Card.Body>
-            </Card>
+        <section className='bg-success-subtle'>
+          <div className='container p-5 '>
+            <div className='row gap-4 gap-lg-5 p-xxs-5 p-lg-5  '>
+              <Card className='col-md border-warning-subtle border-2 '>
+                <Card.Img class='img-fluid  h-100' variant='top' src={html} />
+                <Card.Body className='position-relative '>
+                  <Card.Title>Learn HTML/CSS</Card.Title>
+                  <Card.Text>
+                    Learn fundamentals of web development that will help you to
+                    build your first website
+                  </Card.Text>
+                  <Button variant='warning'>Watch Now</Button>
+                </Card.Body>
+              </Card>
+              <Card className='col-md border-warning-subtle border-2'>
+                <Card.Img class='img-fluid p-1 h-100' variant='top' src={git} />
+                <Card.Body>
+                  <Card.Title>Introduction to GIT</Card.Title>
+                  <Card.Text>
+                    Learn basics of version control system that will help you to
+                    maintain and simplify your workflow
+                  </Card.Text>
+                  <Button variant='warning'>Watch Now</Button>
+                </Card.Body>
+              </Card>
+              <Card className='col-md border-warning-subtle border-2'>
+                <Card.Img
+                  class='img-fluid p-2  h-100'
+                  variant='top'
+                  src={react}
+                />
+                <Card.Body>
+                  <Card.Title>How to pick a Framework</Card.Title>
+                  <Card.Text>
+                    With this guide you can determine what framework is best
+                    suited for you and can help you build your dream project
+                    sooner
+                  </Card.Text>
+                  <Button variant='warning'>Watch Now</Button>
+                </Card.Body>
+              </Card>
+            </div>
           </div>
         </section>
       </div>
