@@ -9,6 +9,8 @@ import dev from "./assets/dev.svg";
 import html from "./assets/html.svg";
 import git from "./assets/git.svg";
 import react from "./assets/react.svg";
+import girl from "./assets/girl.svg";
+import boy from "./assets/boy.svg";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -145,6 +147,55 @@ function App() {
                   <Button variant='warning'>Watch Now</Button>
                 </Card.Body>
               </Card>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div className='learn'>
+        <section className='p-5 bg-light'>
+          <div className='container  row gap-3'>
+            <div className='col-md'>
+              <h2 className='py-2'>Why Us?</h2>
+              <p className='lead'>
+                We strive for everyone to have a personal experience when it
+                comes to education. Our mentors make sure that you being taught
+                most modern and vital aspects of programming. Everyone is
+                different and have to be approach differently. Our mentors will
+                be always on contact if you need help with anything.
+              </p>
+            </div>
+            <div className='col-md position-relative'>
+              <img className='img-fluid  ' src={girl} alt='' srcset='' />
+              <Button
+                variant='info'
+                className='m-1 position-absolute bottom-0 end-0 '
+              >
+                Learn More
+              </Button>
+            </div>
+          </div>
+        </section>
+        <section className='bg-secondary text-light  p-5'>
+          <div className='container  row gap-3'>
+            <div className='col-md position-relative'>
+              <img className='img-fluid  ' src={boy} alt='' srcset='' />
+              <Button
+                variant='danger'
+                className='m-1 position-absolute top-0 start-0 '
+              >
+                Learn More
+              </Button>
+            </div>
+            <div className='col-md'>
+              <h2 className='py-2 text-end'>Bootcamp vs Self-taught</h2>
+              <p className='lead '>
+                With amount of free coding resources you might think it is
+                easier to teach yourself all the necessary things, but it is
+                also very easy to lose yourself in constant struggle to search
+                for a clear path of learning. Our coding bootcamp is adapting to
+                every student needs and we set a clear path of information and
+                tools to learn quickly and productively.
+              </p>
             </div>
           </div>
         </section>
